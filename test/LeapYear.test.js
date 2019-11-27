@@ -1,7 +1,7 @@
 import LeapYear from "../src/LeapYear"
 
 describe('LeapYear Should', () => {
-  it('return true when check year 2016', () => {
+  it('return true when is leapYear', () => {
     const leapYear = new LeapYear()
     expect(leapYear.check(2016)).toBeTruthy()
   })

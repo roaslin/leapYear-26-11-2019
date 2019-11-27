@@ -1,5 +1,5 @@
 export default class LeapYear {
     check(year){
-        return year == 2016;
+        return 2016 == year;
     }
 }
