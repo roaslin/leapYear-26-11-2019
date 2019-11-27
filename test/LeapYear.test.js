@@ -16,4 +16,10 @@ describe('LeapYear Should', () => {
     expect(leapYear.check(1700)).toBeFalsy()
     expect(leapYear.check(1800)).toBeFalsy()
   })
+  it('return true when year is divisible by 4 and not divisible by 100', () => {
+    const leapYear = new LeapYear()
+    expect(leapYear.check(2008)).toBeTruthy()
+    expect(leapYear.check(2012)).toBeTruthy()
+    expect(leapYear.check(2016)).toBeTruthy()
+  })
 })
